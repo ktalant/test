@@ -8,6 +8,6 @@ spec:
   containers:
     - image: busybox
       name: busybox-pod
-      commands: ['/bin/sh','-c']
+      command: ['/bin/sh','-c']
       args:
         - sleep 3000
