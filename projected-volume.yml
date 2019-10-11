@@ -21,13 +21,15 @@ spec:
       projected:
         defaultMode: 0400
         sources:
-          - secret: db-secret
-            items:
-              - key: db-secret
-                path: db-secret
+          - secret: 
+              name: db-secret
+              items:
+                - key: db-secret
+                  path: db-secret
           - configMap:
-            items:
-              - key: db-conf
-                path: db-conf
-                mode: 0777
+              name: db-conf
+              items:
+                - key: db-conf
+                  path: db-conf
+                  mode: 0777
 
