@@ -13,7 +13,7 @@ spec:
         - sleep 3000
       volumeMounts:
         - name: proje-vol
-          path: "/projected-vol"
+          mountPath: "/projected-vol"
           readOnly: true
 
   volumes:
