@@ -24,12 +24,12 @@ spec:
           - secret: 
               name: db-secret
               items:
-                - key: db-secret
+                - key: password
                   path: db-secret
           - configMap:
               name: db-conf
               items:
-                - key: db-conf
+                - key: file1.conf
                   path: db-conf
                   mode: 0777
 
